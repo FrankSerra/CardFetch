@@ -46,7 +46,7 @@ def do_hs_search(app, responseURL, searchTerm, gold):
             name = None
             imgurl = None
 
-            response = requests.get("https://omgvamp-hearthstone-v1.p.mashape.com/cards/"+searchTerm, headers={"X-Mashape-Key": "WaPqRvu4Mdmsh8aFptRJeKeNOw42p1dpygSjsnvIBQKFYaMHsc", "Accept": "application/json"})
+            response = requests.get("https://omgvamp-hearthstone-v1.p.mashape.com/cards/"+searchTerm, headers={"X-Mashape-Key": "<key>", "Accept": "application/json"})
             if response.status_code is 200:
                 r = []
                 for result in response.json():
